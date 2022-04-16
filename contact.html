@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Archana</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script src="info.js"></script>
+</head>
+<body>
+    <main>
+        <div class="Contact">
+            
+            
+        
+        <div id="form">
+            <h1>Sign Up</h1>
+            <form
+            name="signup"
+            action="https://httpbin.org/post"
+            onsubmit="returnvalidateForm();"
+            method="post"
+          >
+          <br>
+          <br>
+          <label>Name</label>
+          <br />
+          <input
+            type="text"
+            placeholder="Enter your Name"
+            name="firstName"
+            required="required"
+          />
+          <br>
+          <label>E-mail Address</label><br>
+          <input id="Email" type="email" name="email" placeholder="Enter an email" required>
+          <br>
+          <label>Address</label><br>
+          <input id="Address" type="Address" name="Address" placeholder="Enter Address" required>
+          <br>
+          <label>City</label><br>
+          <input id="City" type="City" name="City" placeholder="Enter an location" required>
+          <br>
+          <p>Questions</p>
+              <label><input type="radio" name="studyStat" value="Questions" required default/>Questions</label><br />
+              <label><input type="radio" name="studyStat" value="ENROLLED" />Comments</label><br />      
+              <label><input type="radio" name="studyStat" value="DID NOT GRADUATE" />Hiring</label><br/>
+              <br>   
+              <label>Comments</label><br>
+          <input id="Comments" type="text" name="Comments" placeholder="Any questions" required>
+          <br><br>
+          <label >Postal Code</label><br>
+          <input id="postalcode" name="postalcode" placeholder="Characters" required >
+     
+          <br>
+          <input type="submit" name="submit" onclick="returnvalidateForm()"/>
+          <input type="reset" name="reset" />
+          </form>
+        </div>
+        <div>
+            <p id="NameVal" class="errors"></p>
+            <p id="EmailMatch"class="errors"></p>
+            <p id="addressVal" class="errors"></p>
+            <p id="cityVal" class="errors"></p>
+        </div>
+    </main>
+    <br>
+    <br>
+    <footer>
+      &copy Arcahana
+      <br>
+            
+    
+   
+  </footer>
+    
+</body>
+</html>
